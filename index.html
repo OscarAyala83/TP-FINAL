@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+
+  <title>Document</title>
+</head>
+
+<body>
+
+
+
+  <div class="logo">
+    <img src="IMG/logo soja.jpg" class="soja">
+
+    <form id="form">
+      <fieldset>
+        <legend>Merma Por Humedad </legend>
+        <p>Kilogramos:
+          <input type="float" placeholder="Ingrese Kilos" id="kilos">
+        </p>
+        <p>Humedad:
+          <input type="float" placeholder="Ingrese Humedad" id="humedad">
+        </p>
+        <p>Incluir Volatil
+          <input type="checkbox" placeholder="Ingrese Kilos">
+
+        </p>
+        <button id="submit">Calcular</button>
+        
+      </fieldset>
+      <fieldset>
+        <legend>Resultados</legend>
+
+        <table class="tabla">
+          <thead>
+            <tr>
+              <th>Merma</th>
+              <th>Porcentaje</th>
+              <th>Kilos</th>
+              <th>Kilos Neto</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>Merma por Humedad</td>
+              <td id="Porcentaje"></td>
+              <td id="MermaKilos"></td>
+              <td></td>
+            </tr>
+
+            <tr>
+              <td>Merma por Manipuleo</td>
+              <td id="MermaManipuleo"></td>
+              <td id="KilosManipuleo"></td>
+              <td></td>
+            </tr>
+
+            <tr>
+              <td>Merma a Aplicar</td>
+              <td id="span"></td>
+              <td id="TotalMermaKilos"></td>
+              <td id="KilosNetos"></td>
+            </tr>
+          </tbody>
+
+        </table>
+      </fieldset>
+    </form>
+  </div>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

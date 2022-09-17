@@ -1,0 +1,95 @@
+body {
+
+    margin: 0;
+    padding: 0;
+    background: url(IMG/Campo.jpg);
+    background-size: cover;
+    height: 100vh;
+}
+
+.logo {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    height: 580px;
+    box-sizing: border-box;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 50px 30px;
+}
+
+p {
+    color: rgb(119, 234, 136);
+    font-size: 16px;
+}
+
+.logo input[type="float"] {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    color: #fff;
+    height: 40px;
+    font-size: 16px;
+}
+
+::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+button {
+    border: none;
+    outline: none;
+    height: 30px;
+    width: 40%;
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 50px;
+    background: rgb(119, 234, 136);
+    color: #fff;
+    margin-left: 120px;
+}
+
+button:hover {
+    color: aqua;
+}
+
+.soja {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+
+    position: absolute;
+    top: calc(-100px/2);
+    left: calc(50% - 50px);
+
+}
+
+legend {
+    color: white;
+    font-weight: bold;
+
+}
+
+thead,
+td,
+th,
+tbody,
+tr {
+    border: 1px solid #ddd;
+    color: rgb(119, 234, 136);
+    font-size: 16px;
+    text-align: center;
+    padding: 10px;
+    vertical-align: top;
+
+}
+
+.tabla {
+
+    border-collapse: collapse;
+
+}
