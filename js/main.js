@@ -51,19 +51,20 @@ document.getElementById('form')
    const kilos = document.querySelector("#kilos").value;
    const humedadselec = document.getElementById('humedad').value;
    if (humedadselec<13.6) {
-      alert("Este camion no tiene humedad.")
+      alert("Este camion no tiene humedad. Por favor ingrese un valor superior de 13.5")
+   } else if (humedadselec>25) { 
+      alert ("Este camion supuera el maximo permitido de Humedad")
    }
+
+
    const bus = soja.find(elemento => elemento.humedad == humedadselec); 
    const merma = bus.rebaja;  
    
    Porcentaje.textContent = merma;
-   MermaKilos.textContent = (kilos * merma)/100;
+   MermaKilos.textContent = (Math.ceil(kilos * merma)/100);
    MermaManipuleo.textContent = 0.25;
    KilosManipuleo.textContent = kilos * 0.25 /100;
-   TotalMermaKilos.textContent = ((kilos * merma)/100 + (kilos * 0.25)/100);
-   KilosNetos.textContent = kilos - ((kilos * merma)/100 + (kilos * 0.25)/100);
-   form.reset ();
+   TotalMermaKilos.textContent = (Math.ceil((kilos * merma)/100 + (kilos * 0.25)/100));
+   KilosNetos.textContent = Math.ceil (kilos - ((kilos * merma)/100 + (kilos * 0.25)/100));
+
 })
-
-
-
