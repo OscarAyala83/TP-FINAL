@@ -12,7 +12,7 @@
 </head>
 
 <body>
-    <!--Menu-->
+  <!--Menu-->
   <nav class="navbar navbar-dark bg-dark">
     <div class="container">
       <a class="navbar-brand" href=""><img src="./IMG/logo.jpg" width="160" height="80"></a>
@@ -45,8 +45,8 @@
               <ul class="dropdown-menu dropdown-menu-dark">
                 <li><a href="#" class="dropdown-item"><img src="./IMG/IconoSoja.png" width="40" height="40">
                     SOJA</a></li>
-                <li><a class="dropdown-item" href="#"><img src="./IMG/iconoTrigo.png" width="40"
-                      height="40">TRIGO</a></li>
+                <li><a class="dropdown-item" href="#"><img src="./IMG/iconoTrigo.png" width="40" height="40">TRIGO</a>
+                </li>
 
               </ul>
             </li>
@@ -57,72 +57,73 @@
     </div>
   </nav>
   <!--Fin Menu-->
+  
+  <!--Formulario-->
+  <div id="contenedor">
+    <div class="logo">
+      <img src="IMG/logo soja.jpg" class="soja">
 
-<div id= "contenedor">
-  <div class="logo">
-    <img src="IMG/logo soja.jpg" class="soja">
+      <form id="form">
+        <fieldset>
+          <legend>Merma Por Humedad </legend>
+          <p>Kilogramos:
+            <input type="float" placeholder="Ingrese Kilos" id="kilos">
+          </p>
+          <p>Humedad:
+            <input type="float" placeholder="Ingrese Humedad" id="humedad">
+          </p>
+          <p>Incluir Volatil
+            <input type="checkbox" placeholder="Ingrese Kilos" id="volatil">
 
-    <form id="form">
-      <fieldset>
-        <legend>Merma Por Humedad </legend>
-        <p>Kilogramos:
-          <input type="float" placeholder="Ingrese Kilos" id="kilos">
-        </p>
-        <p>Humedad:
-          <input type="float" placeholder="Ingrese Humedad" id="humedad">
-        </p>
-        <p>Incluir Volatil
-          <input type="checkbox" placeholder="Ingrese Kilos">
+          </p>
+          <button id="submit">Calcular</button>
 
-        </p>
-        <button id="submit">Calcular</button>
+        </fieldset>
+        <fieldset>
+          <legend>Resultados</legend>
 
-      </fieldset>
-      <fieldset>
-        <legend>Resultados</legend>
+          <table class="tabla">
+            <thead>
+              <tr>
+                <th>Merma</th>
+                <th>Porcentaje</th>
+                <th>Kilos</th>
+                <th>Kilos Neto</th>
+              </tr>
+            </thead>
 
-        <table class="tabla">
-          <thead>
-            <tr>
-              <th>Merma</th>
-              <th>Porcentaje</th>
-              <th>Kilos</th>
-              <th>Kilos Neto</th>
-            </tr>
-          </thead>
+            <tbody>
+              <tr>
+                <td>Merma por Humedad</td>
+                <td id="Porcentaje"></td>
+                <td id="MermaKilos"></td>
+                <td></td>
+              </tr>
 
-          <tbody>
-            <tr>
-              <td>Merma por Humedad</td>
-              <td id="Porcentaje"></td>
-              <td id="MermaKilos"></td>
-              <td></td>
-            </tr>
+              <tr>
+                <td>Merma por Manipuleo</td>
+                <td id="MermaManipuleo"></td>
+                <td id="KilosManipuleo"></td>
+                <td></td>
+              </tr>
 
-            <tr>
-              <td>Merma por Manipuleo</td>
-              <td id="MermaManipuleo"></td>
-              <td id="KilosManipuleo"></td>
-              <td></td>
-            </tr>
-
-            <tr>
-              <td>Merma a Aplicar</td>
-              <td id="span"></td>
-              <td id="TotalMermaKilos"></td>
-              <td id="KilosNetos"></td>
-            </tr>
+              <tr>
+                <td>Merma a Aplicar</td>
+                <td id="span"></td>
+                <td id="TotalMermaKilos"></td>
+                <td id="KilosNetos"></td>
+              </tr>
 
 
-          </tbody>
+            </tbody>
 
-        </table>
-      </fieldset>
-    </form>
+          </table>
+        </fieldset>
+      </form>
+    </div>
   </div>
-</div>
   <script src="js/main.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-
+<!--Fin del Formulario-->
 </html>

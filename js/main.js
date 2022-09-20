@@ -46,8 +46,8 @@ const soja = [
 document.getElementById('form')
    .addEventListener('submit', function(e) {
    e.preventDefault();
-
-   
+   let mermaVolatil;
+   const volatil = document.getElementById('volatil');
    const kilos = document.querySelector("#kilos").value;
    const humedadselec = document.getElementById('humedad').value;
    if (humedadselec<13.6) {
@@ -55,16 +55,23 @@ document.getElementById('form')
    } else if (humedadselec>25) { 
       alert ("Este camion supuera el maximo permitido de Humedad")
    }
+   if (volatil.checked==true) {
+      mermaVolatil = 0.20;
+      calculo();
+   } else {
+      mermaVolatil = 0;
+      calculo();
+   }
 
-
+   function calculo(){
    const bus = soja.find(elemento => elemento.humedad == humedadselec); 
    const merma = bus.rebaja;  
    
    Porcentaje.textContent = merma;
    MermaKilos.textContent = (Math.ceil(kilos * merma)/100);
-   MermaManipuleo.textContent = 0.25;
+   MermaManipuleo.textContent = 0.25 + mermaVolatil;
    KilosManipuleo.textContent = kilos * 0.25 /100;
    TotalMermaKilos.textContent = (Math.ceil((kilos * merma)/100 + (kilos * 0.25)/100));
    KilosNetos.textContent = Math.ceil (kilos - ((kilos * merma)/100 + (kilos * 0.25)/100));
-
+   }
 })
