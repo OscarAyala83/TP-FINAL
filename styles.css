@@ -83,3 +83,13 @@ tr {
     padding: 10px;
     vertical-align: top;
 }
+@media screen and (max-width: 500px) {
+    body {
+       background-size: auto;
+       
+    }
+ .logo {
+    max-width: 50vh;
+    height: 100%;
+    top: 70%;
+} 

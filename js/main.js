@@ -56,7 +56,7 @@ document.getElementById('form')
       alert ("Este camion supuera el maximo permitido de Humedad")
    }
    if (volatil.checked==true) {
-      mermaVolatil = 0.20;
+      mermaVolatil = 0.50;
       calculo();
    } else {
       mermaVolatil = 0;
@@ -70,8 +70,8 @@ document.getElementById('form')
    Porcentaje.textContent = merma;
    MermaKilos.textContent = (Math.ceil(kilos * merma)/100);
    MermaManipuleo.textContent = 0.25 + mermaVolatil;
-   KilosManipuleo.textContent = kilos * 0.25 /100;
-   TotalMermaKilos.textContent = (Math.ceil((kilos * merma)/100 + (kilos * 0.25)/100));
-   KilosNetos.textContent = Math.ceil (kilos - ((kilos * merma)/100 + (kilos * 0.25)/100));
+   KilosManipuleo.textContent = kilos * (0.25 + mermaVolatil) /100;
+   TotalMermaKilos.textContent = (Math.ceil((kilos * merma)/100 + (kilos * (0.25 + mermaVolatil))/100));
+   KilosNetos.textContent = Math.ceil (kilos - ((kilos * merma)/100 + (kilos * (0.25 + mermaVolatil))/100));
    }
 })
