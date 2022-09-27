@@ -8,11 +8,11 @@
   <link rel="stylesheet" href="styles.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
-  <title>Document</title>
+   <title>Document</title>
 </head>
 
 <body>
-  
+
   <!--Menu-->
   <nav class="navbar navbar-dark bg-dark">
     <div class="container">
@@ -58,7 +58,7 @@
     </div>
   </nav>
   <!--Fin Menu-->
-  
+
   <!--Formulario-->
   <div id="contenedor">
     <div class="logo">
@@ -67,18 +67,18 @@
       <form id="form">
         <fieldset>
           <legend>Merma Por Humedad </legend>
-          <p>Kilogramos:
-            <input type="float" placeholder="Ingrese Kilos" id="kilos">
-          </p>
-          <p>Humedad:
-            <input type="float" placeholder="Ingrese Humedad" id="humedad">
-          </p>
-          <p>Incluir Volatil
-            <input type="checkbox" placeholder="Ingrese Kilos" id="volatil">
+          Nro. Carta de Porte:
+          <input type="float" placeholder="Ingrese Numero de Carta de Porte" id="CP">
+          Kilogramos:
+          <input type="float" placeholder="Ingrese Kilos" id="kilos">
+          Humedad:
+          <input type="float" placeholder="Ingrese Humedad" id="humedad">
+          Incluir Volatil
+          <input type="checkbox" placeholder="Ingrese Kilos" id="volatil">
 
-          </p>
           <button id="submit">Calcular</button>
-
+          <button id="agregar">Agregar</button>
+          <button id="eliminar">Eliminar</button>
         </fieldset>
         <fieldset>
           <legend>Resultados</legend>
@@ -119,13 +119,30 @@
             </tbody>
 
           </table>
+
+
         </fieldset>
       </form>
+
     </div>
+    <table id="listadoCamiones">
+      <tr>
+        <th>Nro. Carta Porte</th>
+        <th>Kilos</th>
+        <th>Humedad</th>
+        <th>Merma</th>
+        <th>Kilos Neto</th>
+        <th>Accion</th>
+      </tr>
+
+    </table>
+
   </div>
   <script src="js/main.js"></script>
+  <script src="js/main2.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 <!--Fin del Formulario-->
+
 </html>

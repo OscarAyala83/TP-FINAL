@@ -46,12 +46,13 @@ const soja = [
 document.getElementById('form')
    .addEventListener('submit', function(e) {
    e.preventDefault();
-   let mermaVolatil;
+   
+   
    const volatil = document.getElementById('volatil');
    const kilos = document.querySelector("#kilos").value;
    const humedadselec = document.getElementById('humedad').value;
    if (humedadselec<13.6) {
-      alert("Este camion no tiene humedad. Por favor ingrese un valor superior de 13.5")
+      alert("Este camion no tiene humedad. Por favor ingrese un valor superior a 13.5")
    } else if (humedadselec>25) { 
       alert ("Este camion supuera el maximo permitido de Humedad")
    }
@@ -68,10 +69,23 @@ document.getElementById('form')
    const merma = bus.rebaja;  
    
    Porcentaje.textContent = merma;
-   MermaKilos.textContent = (Math.ceil(kilos * merma)/100);
-   MermaManipuleo.textContent = 0.25 + mermaVolatil;
-   KilosManipuleo.textContent = kilos * (0.25 + mermaVolatil) /100;
-   TotalMermaKilos.textContent = (Math.ceil((kilos * merma)/100 + (kilos * (0.25 + mermaVolatil))/100));
-   KilosNetos.textContent = Math.ceil (kilos - ((kilos * merma)/100 + (kilos * (0.25 + mermaVolatil))/100));
+   MKilos = (Math.ceil(kilos * merma)/100);
+   MermaKilos.textContent = MKilos;
+   MermManipuleo = 0.25 + mermaVolatil;
+   MermaManipuleo.textContent = MermManipuleo;
+   console.log (MermManipuleo);
+   KManipuleo = (kilos * MermManipuleo)/100;
+   console.log (KManipuleo);
+   KilosManipuleo.textContent = KManipuleo;
+   TMermaKilos = (MKilos + KManipuleo);
+   console.log (TMermaKilos);
+   TotalMermaKilos.textContent = TMermaKilos;
+
+   KilosNetos.textContent = Math.ceil (kilos -TMermaKilos);
+   KNetos = Math.ceil (kilos -TMermaKilos);
+  
+   nMerma = document.getElementById('TotalMermaKilos').innerHTML;
+   /* console.log (KNetos, nm); */
    }
+   
 })

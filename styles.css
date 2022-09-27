@@ -19,9 +19,10 @@ body {
     padding: 50px 30px;
 }
 
-p {
+fieldset {
     color: rgb(119, 234, 136);
     font-size: 16px;
+
 }
 
 .logo input[type="float"] {
@@ -93,3 +94,4 @@ tr {
     height: 100%;
     top: 70%;
 } 
+}
