@@ -60,7 +60,7 @@
   <!--Fin Menu-->
 
   <!--Formulario-->
-  <div id="contenedor">
+  <div class="container2">
     <div class="logo">
       <img src="IMG/logo soja.jpg" class="soja">
 
@@ -75,10 +75,10 @@
           <input type="float" placeholder="Ingrese Humedad" id="humedad">
           Incluir Volatil
           <input type="checkbox" placeholder="Ingrese Kilos" id="volatil">
-
+          <div> 
           <button id="submit">Calcular</button>
           <button id="agregar">Agregar</button>
-          <button id="eliminar">Eliminar</button>
+           </div> 
         </fieldset>
         <fieldset>
           <legend>Resultados</legend>
@@ -125,19 +125,22 @@
       </form>
 
     </div>
+    <div class="RegistroCamiones">
     <table id="listadoCamiones">
+    
       <tr>
+        
         <th>Nro. Carta Porte</th>
         <th>Kilos</th>
         <th>Humedad</th>
         <th>Merma</th>
         <th>Kilos Neto</th>
         <th>Accion</th>
+       
       </tr>
-
     </table>
-
   </div>
+  
   <script src="js/main.js"></script>
   <script src="js/main2.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
