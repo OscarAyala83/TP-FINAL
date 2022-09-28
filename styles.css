@@ -127,7 +127,34 @@ tr {
      }
     .logo {
         
-        margin-left: 120px; 
+        margin-left: 160px; 
+        width: 100%;
+        top:500px; 
+    }
+      
+  
+    .RegistroCamiones {
+    
+    margin-top: 700px;
+    margin-left: -290px;
+    width: 100%;
+    
+  
+    }
+
+th,td {
+    font-size: 10px;
+    
+}
+}
+@media screen and (max-width: 375px) {
+    body{
+      background-size: cover;   
+       
+     }
+    .logo {
+        
+        margin-left: 150px; 
         width: 100%;
         top:400px; 
     }
@@ -136,13 +163,14 @@ tr {
     .RegistroCamiones {
     
     margin-top: 620px;
-    margin-left: -290px;
+    margin-left: -262px;
     width: 100%;
     
   
     }
 
 th,td {
-    font-size: 12px;
+    font-size: 10px;
+    
 }
 }
