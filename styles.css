@@ -22,7 +22,7 @@ body {
 fieldset {
     color: rgb(119, 234, 136);
     font-size: 16px;
-    
+
 }
 
 .logo input[type="float"] {
@@ -50,7 +50,7 @@ button {
     border-radius: 50px;
     background: rgb(119, 234, 136);
     color: #fff;
-    
+
 }
 
 button:hover {
@@ -73,7 +73,8 @@ legend {
     text-align: center;
 }
 
-.tabla, thead,
+.tabla,
+thead,
 td,
 th,
 tbody,
@@ -83,6 +84,7 @@ tr {
     text-align: center;
     padding: 10px;
 }
+
 .RegistroCamiones {
     position: absolute;
     top: 55%;
@@ -92,85 +94,65 @@ tr {
     height: 580px;
     box-sizing: border-box;
     background: rgba(0, 0, 0, 0.5);
-   
+
     color: white;
 }
 
 
-/* @media screen and (max-width: 375px) {
-    body{
-        background-size: cover;   
-         
-       }
-      .logo {
-         
-          width: 100%;
-          top:400px; 
-      }
-        
-    
-      .RegistroCamiones {
-      
-      margin-top: 610px;
-      margin-left: -2300000px;
-      width: 100%;
-      }
-      th,td {
-        font-size: 10px;
-    }
-} */
-
 @media screen and (max-width: 500px) {
-    body{
-      background-size: cover;   
-       
-     }
-    .logo {
-        
-        margin-left: 160px; 
-        width: 100%;
-        top:500px; 
-    }
-      
-  
-    .RegistroCamiones {
-    
-    margin-top: 700px;
-    margin-left: -290px;
-    width: 100%;
-    
-  
+    body {
+        background-size: cover;
+
     }
 
-th,td {
-    font-size: 10px;
-    
+    .logo {
+
+        margin-left: 160px;
+        width: 100%;
+        top: 500px;
+    }
+
+
+    .RegistroCamiones {
+
+        margin-top: 700px;
+        margin-left: -290px;
+        width: 100%;
 }
+
+    th,
+    td {
+        font-size: 10px;
+
+    }
 }
+
 @media screen and (max-width: 375px) {
-    body{
-      background-size: cover;   
-       
-     }
-    .logo {
-        
-        margin-left: 150px; 
-        width: 100%;
-        top:400px; 
-    }
-      
-  
-    .RegistroCamiones {
-    
-    margin-top: 620px;
-    margin-left: -262px;
-    width: 100%;
-    
-  
+    body {
+        background-size: cover;
+
     }
 
-th,td {
-    font-size: 10px;
-    
-}
+    .logo {
+
+        margin-left: 150px;
+        width: 100%;
+        top: 400px;
+    }
+
+
+    .RegistroCamiones {
+
+        margin-top: 620px;
+        margin-left: -262px;
+        width: 100%;
+
+
+    }
+
+    th,
+    td {
+        font-size: 10px;
+
+    }
 }
