@@ -51,7 +51,8 @@ document.getElementById('form')
       const volatil = document.getElementById('volatil');
       const kilos = document.querySelector("#kilos").value;
       const humedadselec = document.getElementById('humedad').value;
-      
+
+
       if (humedadselec < 13.6) {
          alert("Este camion no tiene humedad. Por favor ingrese un valor superior a 13.5")
       } else if (humedadselec > 25) {

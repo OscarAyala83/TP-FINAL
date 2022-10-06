@@ -12,6 +12,10 @@ function agregar() {
     Humedad = document.getElementById('humedad').value;
     Merma = document.getElementById('TotalMermaKilos').innerText;
     KilosNeto = document.getElementById('KilosNetos').innerText;
+
+
+
+
     aNuevoCamion.push({ CartaPorte, Kilos, Humedad, Merma, KilosNeto });
 
     localStorage.setItem('lista', JSON.stringify(aNuevoCamion));
@@ -35,18 +39,29 @@ function agregar() {
     celda6.innerHTML = ('<img src="IMG/remove.png" width="20px" height="20px" id="borrarRegistro"> </img>');
 
 
+
     document.querySelector('#borrarRegistro').addEventListener('click', confirmacion);
 
 }
+
+
 function registro() {
 
+    let ls = localStorage.getItem('lista');
+    console.log(ls)
     if (localStorage.getItem('lista') === null) {
         alert("El Historial esta vacio")
     } else {
-        alert(localStorage.getItem('lista'));
+
+        for (let local in ls) {
+
+            alert(ls);
+            break;
+        }
+
     }
 
-    //celda2.innerHTML = JSON.parse(localStorage.getItem('nKilos'));
+
 }
 
 
@@ -59,14 +74,14 @@ function confirmacion() {
 
 }
 function eliminar() {
-    
+
     let indice = aNuevoCamion.indexOf();
     if (indice == -1) {
         aNuevoCamion.splice(indice, 1);
         document.getElementById('listadoCamiones').deleteRow(1);
 
     }
-    
+
 }
 function borrarRegistro() {
     let resultado = window.confirm("Esta seguro que quiere eliminar el historial");
