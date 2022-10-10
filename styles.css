@@ -10,8 +10,8 @@ body {
 .logo {
     position: absolute;
     top: 55%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    left: 40%;
+    transform: translate(-80%, -50%);
     width: 500px;
     height: 580px;
     box-sizing: border-box;
@@ -19,9 +19,10 @@ body {
     padding: 50px 30px;
 }
 
-p {
+fieldset {
     color: rgb(119, 234, 136);
     font-size: 16px;
+
 }
 
 .logo input[type="float"] {
@@ -44,13 +45,12 @@ button {
     outline: none;
     height: 30px;
     width: 40%;
-    margin-top: 10px;
     font-size: 20px;
     font-weight: bold;
     border-radius: 50px;
     background: rgb(119, 234, 136);
     color: #fff;
-    margin-left: 120px;
+
 }
 
 button:hover {
@@ -65,31 +65,98 @@ button:hover {
     position: absolute;
     top: calc(-100px/2);
     left: calc(50% - 50px);
-
 }
 
 legend {
     color: white;
     font-weight: bold;
-
+    text-align: center;
 }
 
+.tabla,
 thead,
 td,
 th,
 tbody,
 tr {
-    border: 1px solid #ddd;
     color: rgb(119, 234, 136);
     font-size: 16px;
     text-align: center;
     padding: 10px;
-    vertical-align: top;
-
 }
 
-.tabla {
+.RegistroCamiones {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(20%, -50%);
+    width: 500px;
+    height: 580px;
+    box-sizing: border-box;
+    background: rgba(0, 0, 0, 0.5);
 
-    border-collapse: collapse;
+    color: white;
+}
 
+
+@media screen and (max-width: 500px) {
+    body {
+        background-size: cover;
+
+    }
+
+    .logo {
+
+        margin-left: 160px;
+        width: 100%;
+        top: 500px;
+    }
+
+
+    .RegistroCamiones {
+
+        margin-top: 700px;
+        margin-left: -290px;
+        width: 100%;
+}
+
+    th,
+    td {
+        font-size: 10px;
+
+    }
+}
+
+@media screen and (max-width: 375px) {
+    body {
+        background-size: cover;
+
+    }
+
+    .logo {
+
+        margin-left: 150px;
+        width: 100%;
+        top: 400px;
+    }
+
+
+    .RegistroCamiones {
+
+        margin-top: 620px;
+        margin-left: -262px;
+        width: 100%;
+
+
+    }
+
+    th,
+    td {
+        font-size: 10px;
+
+    }
+}
+
+#borrarRegistro {
+    cursor: pointer;
 }
