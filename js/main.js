@@ -51,7 +51,6 @@ document.getElementById('form')
       const volatil = document.getElementById('volatil');
       const kilos = document.querySelector("#kilos").value;
       const humedadselec = document.getElementById('humedad').value;
-<<<<<<< HEAD
       
       if (humedadselec < 13.6) {
          alert("Este camion no tiene humedad. Por favor ingrese un valor superior a 13.5")
@@ -66,23 +65,6 @@ document.getElementById('form')
          calculo();
       }
 
-=======
-
-
-      if (humedadselec < 13.6) {
-         alert("Este camion no tiene humedad. Por favor ingrese un valor superior a 13.5")
-      } else if (humedadselec > 25) {
-         alert("Este camion supuera el maximo permitido de Humedad")
-      }
-      if (volatil.checked == true) {
-         mermaVolatil = 0.50;
-         calculo();
-      } else {
-         mermaVolatil = 0;
-         calculo();
-      }
-
->>>>>>> 947a20b664af38fe5a68329734ee5f0a164f9272
       function calculo() {
          const bus = soja.find(elemento => elemento.humedad == humedadselec);
          const merma = bus.rebaja;
