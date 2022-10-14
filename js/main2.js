@@ -116,3 +116,22 @@ function eliminar() {
         
     } */
 //}
+function tabla (){
+    const tablaCamiones = document.getElementById('listadoCamiones');
+    let fila = tablaCamiones.insertRow(0 + 1);
+            let celda0 = fila.insertCell(0);
+            let celda1 = fila.insertCell(1);
+            let celda2 = fila.insertCell(2);
+            let celda3 = fila.insertCell(3);
+            let celda4 = fila.insertCell(4);
+            let celda5 = fila.insertCell(5);
+            let celda6 = fila.insertCell(6);
+
+            celda0.innerHTML = cereal;
+            celda1.innerHTML = CartaPorte;
+            celda2.innerHTML = Kilos;
+            celda3.innerHTML = Humedad;
+            celda4.innerHTML = Merma;
+            celda5.innerHTML = KilosNeto;
+            celda6.innerHTML = ('<img src="IMG/remove.png" width="20px" height="20px" id="borrarRegistro"> </img>');   
+}
