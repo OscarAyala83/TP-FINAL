@@ -69,6 +69,13 @@
           <legend>Merma Por Humedad </legend>
           Nro. Carta de Porte:
           <input type="float" placeholder="Ingrese Numero de Carta de Porte" id="CP">
+          <div>Cereal:
+            <select name="cereales" id="cereales">
+            <option value="soja">SOJA</option>
+            <option value="trigo">TRIGO</option>
+            <option value="maiz">MAIZ</option>
+           </select> 
+          </div>
           Kilogramos:
           <input type="float" placeholder="Ingrese Kilos" id="kilos">
           Humedad:
@@ -130,8 +137,8 @@
       <table id="listadoCamiones">
 
         <tr>
-
-          <th>Nro. Carta Porte</th>
+          <th>Cereal</th>
+          <th>Nro. CP</th>
           <th>Kilos</th>
           <th>Humedad</th>
           <th>Merma</th>
@@ -140,12 +147,14 @@
 
         </tr>
       </table>
-      <button id="historial">Historial</button>
-      <button id="borrar">Borrar Historial</button>
+     <!--  <button id="borrar">Borrar Historial</button> -->
+      
     </div>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment-with-locales.min.js" integrity="sha512-42PE0rd+wZ2hNXftlM78BSehIGzezNeQuzihiBCvUEB3CVxHvsShF86wBWwQORNxNINlBPuq7rG4WWhNiTVHFg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="js/main.js"></script>
     <script src="js/main2.js"></script>
+    <script src="js/cereales.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
