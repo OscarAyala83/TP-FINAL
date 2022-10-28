@@ -8,15 +8,25 @@
   <link rel="stylesheet" href="styles.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
-  <title>Document</title>
+
+  <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/gh/datosgobar/series-tiempo-ar-explorer@ts_components_2.0.0/dist/css/components.css"
+    type="text/css">
+  <link type="text/css" rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" media="all" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+  <title>Alabern Fabrega y Cia. S.A - Merma por Humedad</title>
 </head>
 
 <body>
 
   <!--Menu-->
-  <nav class="navbar navbar-dark bg-dark">
+  <nav class="navbar fixed-top navbar-dark bg-dark">
     <div class="container">
-      <a class="navbar-brand" href=""><img src="./IMG/logo.jpg" width="160" height="80"></a>
+      <a class="navbar-brand" href="#"><img src="./IMG/logo.jpg" width="160" height="80"></a>
 
 
       <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar"
@@ -33,10 +43,10 @@
         <div class="offcanvas-body">
           <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/TP/TP-FINAL/index.html">Principal</a>
+              <a class="nav-link active" aria-current="page" href="./index.html">Principal</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="#">Noticias Agropecuarias</a>
+              <a class="nav-link active" href="#ancla">Noticias Agropecuarias</a>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
@@ -62,19 +72,19 @@
   <!--Formulario-->
   <div class="container2">
     <div class="logo">
-      <img src="IMG/logo soja.jpg" class="soja">
+      <img src="IMG/logo soja.jpg" class="soja" id="cereal">
 
       <form id="form">
         <fieldset>
           <legend>Merma Por Humedad </legend>
           Nro. Carta de Porte:
           <input type="float" placeholder="Ingrese Numero de Carta de Porte" id="CP">
-          <div>Cereal:
+          <div class="cereal">Cereal:
             <select name="cereales" id="cereales">
-            <option value="soja">SOJA</option>
-            <option value="trigo">TRIGO</option>
-            <option value="maiz">MAIZ</option>
-           </select> 
+              <option value="soja">SOJA</option>
+              <option value="trigo">TRIGO</option>
+              <option value="maiz">MAIZ</option>
+            </select>
           </div>
           Kilogramos:
           <input type="float" placeholder="Ingrese Kilos" id="kilos">
@@ -82,7 +92,7 @@
           <input type="float" placeholder="Ingrese Humedad" id="humedad">
           Incluir Volatil
           <input type="checkbox" placeholder="Ingrese Kilos" id="volatil">
-          <div>
+          <div class="botones">
             <button id="submit">Calcular</button>
             <button id="agregar">Agregar</button>
 
@@ -94,7 +104,7 @@
           <table class="tabla">
             <thead>
               <tr>
-                <th>Merma</th>
+                <th class="merma">Merma</th>
                 <th>Porcentaje</th>
                 <th>Kilos</th>
                 <th>Kilos Neto</th>
@@ -147,15 +157,27 @@
 
         </tr>
       </table>
-     <!--  <button id="borrar">Borrar Historial</button> -->
-      
+
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment-with-locales.min.js" integrity="sha512-42PE0rd+wZ2hNXftlM78BSehIGzezNeQuzihiBCvUEB3CVxHvsShF86wBWwQORNxNINlBPuq7rG4WWhNiTVHFg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <div class="row2"><a name="ancla"></a>
+      <div id="maiz"></div>
+      <div id="embarques"></div>
+    </div>
+    <div class="row">
+      <div id="trigo"></div>
+      <div id="soja"></div>
+
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment-with-locales.min.js"
+      integrity="sha512-42PE0rd+wZ2hNXftlM78BSehIGzezNeQuzihiBCvUEB3CVxHvsShF86wBWwQORNxNINlBPuq7rG4WWhNiTVHFg=="
+      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="js/main.js"></script>
     <script src="js/main2.js"></script>
-   <!--  <script src="js/cereales.js"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script type='text/javascript'
+      src='https://cdn.jsdelivr.net/gh/datosgobar/series-tiempo-ar-explorer@ts_components_2.0.0/dist/js/components.js'></script>
 
 </body>
 <!--Fin del Formulario-->

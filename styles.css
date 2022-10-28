@@ -1,5 +1,9 @@
-body {
+* {
+    font-family: 'Roboto';
+}
 
+body {
+   
     margin: 0;
     padding: 0;
     background: url(IMG/Campo.jpg);
@@ -17,13 +21,26 @@ body {
     box-sizing: border-box;
     background: rgba(0, 0, 0, 0.5);
     padding: 50px 30px;
+   
+}
+.cereal {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align:left;
+}
+.botones {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    padding-top: 10px;
 }
 
 fieldset {
     color: rgb(119, 234, 136);
-    font-size: 16px;
-
+    font-size: 14px;
+    padding-top: 10px;
 }
+
 
 .logo input[type="float"] {
     width: 100%;
@@ -33,7 +50,7 @@ fieldset {
     outline: none;
     color: #fff;
     height: 40px;
-    font-size: 16px;
+    font-size: 14px;
 }
 
 ::placeholder {
@@ -71,18 +88,29 @@ legend {
     color: white;
     font-weight: bold;
     text-align: center;
+    font-size: 10px;
 }
 
-.tabla,
-thead,
-td,
-th,
-tbody,
-tr {
+
+
+td {
     color: rgb(119, 234, 136);
-    font-size: 16px;
+    font-size: 15px;
     text-align: center;
     padding: 10px;
+   
+}
+
+th,
+tr {
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    padding: 10px;
+   
+}
+.merma {
+    color: rgb(119, 234, 136);
 }
 
 .RegistroCamiones {
@@ -98,6 +126,16 @@ tr {
     color: white;
 }
 
+.row {
+    width: min-content;
+    padding-top: 100px;
+}
+
+.row2 {
+    width: min-content;
+    float: right;
+    margin-top: 100px;
+}
 
 @media screen and (max-width: 500px) {
     body {
@@ -118,19 +156,27 @@ tr {
         margin-top: 700px;
         margin-left: -290px;
         width: 100%;
-}
+    }
 
     th,
     td {
         font-size: 10px;
 
     }
+
+    .row {
+        padding-left: 20px;
+    }
+
+    .row2 {
+        padding-right: 90px;
+        padding-top: 1300px;
+    }
 }
 
 @media screen and (max-width: 375px) {
     body {
         background-size: cover;
-
     }
 
     .logo {
@@ -142,12 +188,9 @@ tr {
 
 
     .RegistroCamiones {
-
         margin-top: 620px;
         margin-left: -262px;
         width: 100%;
-
-
     }
 
     th,
@@ -155,7 +198,31 @@ tr {
         font-size: 10px;
 
     }
+
+    .row {
+        padding-left: 20px;
+    }
+
+    .row2 {
+        padding-right: 90px;
+        padding-top: 1300px;
+    }
+
 }
+
+@media screen and (min-width: 1080px) {
+    .row {
+        padding-left: 350px;
+        padding-top: 890px;
+    }
+
+    .row2 {
+        padding-right: 350px;
+        padding-top: 790px;
+    }
+
+}
+
 #borrarRegistro {
     cursor: pointer;
 }
