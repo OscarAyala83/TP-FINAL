@@ -1,47 +1,10 @@
 document.querySelector('#agregar').addEventListener('click', agregar);
 window.addEventListener("load", registro)
 
-window.onload = function () {
-    TSComponents.Card.render('trigo', {
-        serieId: '369.2_TRIGOIGO__5',
-        color: '#F9A822',
-        title: "Embarques de TRIGO",
-        links: "none",
-        apiBaseUrl: 'http://apis.datos.gob.ar/series/api'
-    })
 
-    TSComponents.Card.render('soja', {
-        serieId: '369.2_POROTO_SOJOJA__11',
-        color: '#6EA100',
-        explicitSign: true,
-        title: "Embarques de Poroto de SOJA",
-        links: "none",
-        apiBaseUrl: 'http://apis.datos.gob.ar/series/api'
-    })
-
-    TSComponents.Card.render('maiz', {
-        serieId: '369.3_MAIZAIZ__4',
-        color: '#f1dd50',
-        explicitSign: true,
-        title: "Embarques de MAIZ",
-        links: "none",
-        apiBaseUrl: 'http://apis.datos.gob.ar/series/api'
-    })
-
-    TSComponents.Card.render('embarques', {
-        serieId: '369.3_TOTALTAL__5',
-        color: '#f1dd50',
-        explicitSign: true,
-        title: "Embarques de Total",
-        links: "none",
-        apiBaseUrl: 'http://apis.datos.gob.ar/series/api'
-    })
-}
 
 let aNuevoCamion = [];
 
-moment.locale("es");
-let fecha = moment().format('Do MMM YY');
 
 function agregar() {
     CartaPorte = document.getElementById('CP').value;
