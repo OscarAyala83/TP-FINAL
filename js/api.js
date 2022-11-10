@@ -49,9 +49,9 @@ const urldivisas = `https://api.bcr.com.ar/gix/v1.0/Cotizacion?page=1`
 fetch(urlsoja, {
   method: "GET",
  headers: {"Content-Type": "application/json", 
-      "api_key": "D82F95F9-F638-ED11-9436-00155D09A733",
-      "secret": "ab8c7b3e6fae032f2455a886128b2789f431c45a8df4d4942a351d6c2c5a578a",
-      "Authorization": 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJRF9Vc3VhcmlvIjoiOTMiLCJDVUlUX0VtcHJlc2EiOiIzMDUwNjczMjQ5OSIsIm5iZiI6MTY2NzU3MzE0MCwiZXhwIjoxNjY3NjU5NTQwLCJpYXQiOjE2Njc1NzMxNDAsImlzcyI6Imh0dHBzOi8vbG9jYWxob3N0OjQ0MzQxIiwiYXVkIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NDQzNDEifQ.z2P3Gib01FtGbGoSYs9ZiycNnNPgBpozgc8NZyzdpZs'
+      "api_key": "....",
+      "secret": "...",
+      "Authorization": '.....'
   }
 })
  
@@ -95,9 +95,9 @@ fetch(urlsoja, {
   fetch(urltrigo, {
     method: "GET",
    headers: {"Content-Type": "application/json", 
-        "api_key": "D82F95F9-F638-ED11-9436-00155D09A733",
-        "secret": "ab8c7b3e6fae032f2455a886128b2789f431c45a8df4d4942a351d6c2c5a578a",
-        "Authorization": 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJRF9Vc3VhcmlvIjoiOTMiLCJDVUlUX0VtcHJlc2EiOiIzMDUwNjczMjQ5OSIsIm5iZiI6MTY2NzU3MzE0MCwiZXhwIjoxNjY3NjU5NTQwLCJpYXQiOjE2Njc1NzMxNDAsImlzcyI6Imh0dHBzOi8vbG9jYWxob3N0OjQ0MzQxIiwiYXVkIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NDQzNDEifQ.z2P3Gib01FtGbGoSYs9ZiycNnNPgBpozgc8NZyzdpZs'
+        "api_key": "....",
+        "secret": "....",
+        "Authorization": '.....'
     }
 })
    
@@ -142,9 +142,9 @@ fetch(urlsoja, {
     fetch(urlmaiz, {
       method: "GET",
      headers: {"Content-Type": "application/json", 
-          "api_key": "D82F95F9-F638-ED11-9436-00155D09A733",
-          "secret": "ab8c7b3e6fae032f2455a886128b2789f431c45a8df4d4942a351d6c2c5a578a",
-          "Authorization": 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJRF9Vc3VhcmlvIjoiOTMiLCJDVUlUX0VtcHJlc2EiOiIzMDUwNjczMjQ5OSIsIm5iZiI6MTY2NzU3MzE0MCwiZXhwIjoxNjY3NjU5NTQwLCJpYXQiOjE2Njc1NzMxNDAsImlzcyI6Imh0dHBzOi8vbG9jYWxob3N0OjQ0MzQxIiwiYXVkIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NDQzNDEifQ.z2P3Gib01FtGbGoSYs9ZiycNnNPgBpozgc8NZyzdpZs'
+          "api_key": "...",
+          "secret": "a.....",
+          "Authorization": '.....'
       }
   })
      
@@ -189,9 +189,9 @@ fetch(urlsoja, {
       fetch(urldivisas, {
         method: "GET",
        headers: {"Content-Type": "application/json", 
-            "api_key": "D82F95F9-F638-ED11-9436-00155D09A733",
-            "secret": "ab8c7b3e6fae032f2455a886128b2789f431c45a8df4d4942a351d6c2c5a578a",
-            "Authorization": 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJRF9Vc3VhcmlvIjoiOTMiLCJDVUlUX0VtcHJlc2EiOiIzMDUwNjczMjQ5OSIsIm5iZiI6MTY2NzU3MzE0MCwiZXhwIjoxNjY3NjU5NTQwLCJpYXQiOjE2Njc1NzMxNDAsImlzcyI6Imh0dHBzOi8vbG9jYWxob3N0OjQ0MzQxIiwiYXVkIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NDQzNDEifQ.z2P3Gib01FtGbGoSYs9ZiycNnNPgBpozgc8NZyzdpZs'
+            "api_key": "....3",
+            "secret": ".....",
+            "Authorization": '....'
         }
     })
        
